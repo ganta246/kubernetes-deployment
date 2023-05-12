@@ -31,6 +31,8 @@ kubectl rollout undo deployment/my-first-deployment --to-revision=6
 kubectl rollout undo deployment/my-first-deployment --to-revision=6
 kubectl set resources deployment/my-first-deployment -c=kubenginx --limits=cpu=20m,memory=30mi
 kubectl describe deployment my-first-deployment
-  
+  kubectl -d -t eks cluster kubernetes deployment
+ 
+ 
   
   
